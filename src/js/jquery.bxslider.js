@@ -544,7 +544,7 @@
 			// use CSS transform
 			if(slider.usingCSS){
 				// determine the translate3d value
-				var propValue = slider.settings.mode === 'vertical' ? 'translate3d(0, ' + value + 'px, 0)' : 'translate3d(' + value + 'px, 0, 0)';
+				var propValue = slider.settings.mode === 'vertical' ? 'translate3d(0, ' + parseInt(value) + 'px, 0)' : 'translate3d(' + value + 'px, 0, 0)';
 				// add the CSS transition-duration
 				el.css('-' + slider.cssPrefix + '-transition-duration', duration / 1000 + 's');
 				if(type === 'slide'){
